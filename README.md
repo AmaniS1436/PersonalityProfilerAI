@@ -75,14 +75,13 @@ Target variable: `personality_type` (multi-class categorical)
 
 ---
 
-## Results
-
-- **XGBoost** and **Random Forest** achieved top accuracy on clean data.
-- Most models maintained high performance even after noise injection.
-- SHAP and PCA helped validate the logic and separability of features.
-
----
-
 ## Conclusion
 
-This project showcases a comprehensive pipeline for synthetic personality type prediction. From thorough EDA to multi-model benchmarking, explainability through SHAP, noise robustness testing, and PCA-based visualization, **PersonalityProfilerAI** serves as a strong foundation for personality classification tasks. The methods implemented ensure both accuracy and interpretability — two critical pillars in applied machine learning.
+
+**Best Model:** SVM (Support Vector Machine) achieved the highest accuracy and robustness, even under noisy data conditions.\
+**Explainability:** SHAP values highlighted key features influencing model decisions, improving trust in AI predictions.\
+**Robustness:** Gaussian noise simulations confirmed the generalization capability of most models, especially SVM and Naive Bayes.\
+**Visualization:** PCA plots showed clear separability between personality types in 2D space.
+
+This end-to-end workflow combines classic ML, noise injection, explainability, and visualization — making it suitable for real-world deployment or portfolio demonstration.
+
